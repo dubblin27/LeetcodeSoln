@@ -20,4 +20,32 @@ class Solution:
             minV = min(n, n*minV,tmp)
             res = max(res,maxV)
         return res
-            
+        
+        '''
+            finding the min value and the max value and storing them
+            multiplying them with the the i'th term of the array and 
+            again calculating the max and the min value and again storing them
+            storing the max in the result 
+
+            for eg [2,-2,0,3] 
+            minV, maxV = 1,1 
+            maxV = (2,2*1,2*1) = 2 
+            minV = (2,2*1,2*1) = 2 
+            res = 2 
+
+            minV, maxV = 2,2
+            maxV = (-2,-4,-4) = -2
+            minV = (-2,-4,-4) = -2
+            res = 2 
+
+            minV,maxV = -2,-2 
+            minvV, maxV = 1,1 
+            res = 2
+
+            minV,maxV = 1,1
+            maxV = (3,3,3)
+            minV = (3,3,3) 
+            res = 3 
+
+            return res = 3
+        '''
